@@ -1,0 +1,13 @@
+=== TOP IPS ===
+192.168.1.10 => 4
+192.168.1.20 => 2
+192.168.1.30 => 1
+192.168.1.40 => 1
+
+=== BRUTE FORCE DETECTION ===
+[ALERT] Possible brute force from 192.168.1.10 | login hits: 4
+
+=== SUSPICIOUS PATHS ===
+[SCAN] 192.168.1.20 requested /admin | status: 404
+[SCAN] 192.168.1.20 requested /admin | status: 404
+[SCAN] 192.168.1.40 requested /secret | status: 403
