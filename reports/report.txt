@@ -1,13 +1,23 @@
-=== TOP IPS ===
-192.168.1.10 => 4
-192.168.1.20 => 2
-192.168.1.30 => 1
-192.168.1.40 => 1
+Top IPs
 
-=== BRUTE FORCE DETECTION ===
-[ALERT] Possible brute force from 192.168.1.10 | login hits: 4
+127.0.0.1: 2
+10.0.0.5: 2
+192.168.1.9: 1
 
-=== SUSPICIOUS PATHS ===
-[SCAN] 192.168.1.20 requested /admin | status: 404
-[SCAN] 192.168.1.20 requested /admin | status: 404
-[SCAN] 192.168.1.40 requested /secret | status: 403
+Top Endpoints
+
+/login: 2
+/admin: 2
+/home: 1
+
+Status Codes
+
+200: 3
+404: 2
+
+Alerts
+
+Sensitive path access: 10.0.0.5 -> /admin (404)
+Sensitive path access: 10.0.0.5 -> /admin (404)
+
+Malformed lines: 0
